@@ -12,3 +12,7 @@ C:\react\svelte-scoreboard>npm install
 C:\react\svelte-scoreboard>npm run dev
 http://localhost:5000/
 
+
+When I´m using npm run dev the index.html doesn´t take the global.css I don´t know why.
+It only works if I do some changes in the global.css (like adding trailing space) and save
+- You need to delete browser cache. Simply hit command-shift-R
