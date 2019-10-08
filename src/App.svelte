@@ -1,5 +1,7 @@
 <script>
-	export let name;
+	// export let name;
+	let name = "John Doe";
+	let points = 100;
 </script>
 
 <style>
@@ -8,4 +10,5 @@
 	}
 </style>
 
-<h1>Hello {name}!</h1>
+<h1>{name}!</h1>
+<h3>{points}!</h3>
