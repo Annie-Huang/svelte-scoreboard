@@ -6,3 +6,8 @@ https://svelte.dev/repl/hello-world?version=3.12.1
 ==========================================================
 
 C:\react>npx degit sveltejs/template svelte-scoreboard
+C:\react\svelte-scoreboard>npm install
+
+C:\react\svelte-scoreboard>npm run dev
+http://localhost:5000/
+
