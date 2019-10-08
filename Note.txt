@@ -2,6 +2,7 @@ https://www.youtube.com/watch?v=uK2RnIzrQ0M&t=76s
 https://svelte.dev/
 https://svelte.dev/repl/hello-world?version=3.12.1
 
+https://github.com/bradtraversy/svelte-scoreboard
 
 ==========================================================
 
