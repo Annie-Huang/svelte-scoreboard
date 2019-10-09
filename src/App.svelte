@@ -24,8 +24,7 @@
     };
 
     const removePlayer = e => {
-        const selectedPlayer = e.detail;
-        players = players.filter(player => player.name !== selectedPlayer.name && player.points !== selectedPlayer.points);
+        players = players.filter(player => player.name !== e.detail);
     }
 </script>
 
