@@ -18,20 +18,25 @@
         }
     ];
 
-    const addplayer = e => {
+    const addPlayer = e => {
         const newPlayer = e.detail;
         players = [...players, newPlayer];
+    };
+
+    const removePlayer = e => {
+        const selectedPlayer = e.detail;
+        players = players.filter(player => player.name !== selectedPlayer.name && player.points !== selectedPlayer.points);
     }
 </script>
 
 <Navbar />
 <div class="container">
-    <AddPlayer on:addplayer={addplayer} />
+    <AddPlayer on:addplayer={addPlayer} />
     {#if players.length === 0}
         <p>No Players</p>
     {:else}
         {#each players as player}
-            <Player name={player.name} points={player.points} />
+            <Player name={player.name} points={player.points} on:removeplayer={removePlayer}/>
         {/each}
     {/if}
 </div>
