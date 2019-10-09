@@ -17,11 +17,16 @@
             points: 34
         }
     ];
+
+    const addplayer = e => {
+        const newPlayer = e.detail;
+        players = [...players, newPlayer];
+    }
 </script>
 
 <Navbar />
 <div class="container">
-    <AddPlayer />
+    <AddPlayer on:addplayer={addplayer} />
     {#if players.length === 0}
         <p>No Players</p>
     {:else}
